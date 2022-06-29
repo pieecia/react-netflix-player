@@ -4,7 +4,7 @@ https://medium.com/@pieecia/create-a-netflix-video-player-with-react-player-type
 
 ## Preview
 
-![alt text](https://miro.medium.com/max/600/1*k9nb2NKeTfEJ5XJcavEQbA.gif)
+![alt text](https://github.com/pieecia/react-netflix-player/blob/master/preview.gif?raw=true)
 
 ## Demo
 

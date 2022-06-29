@@ -47,7 +47,6 @@ const Player: React.FC<ReactPlayerProps> = (props) => {
 
   const handlePreview = () => {
     dispatch({ type: 'PLAY' });
-    dispatch({ type: 'CUSTOM_CONTROLS', payload: true });
     dispatch({ type: 'LIGHT', payload: false });
   };
 
