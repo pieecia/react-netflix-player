@@ -8,4 +8,4 @@ https://medium.com/@pieecia/create-a-netflix-video-player-with-react-player-type
 
 ## Demo
 
-https://stackblitz.com/edit/github-2fbbmh?embed=1&file=src/App.tsx
+https://react-netflix-player-vercel-pieecia.vercel.app/
