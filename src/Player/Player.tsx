@@ -44,6 +44,7 @@ const Player: React.FC<ReactPlayerProps> = (props) => {
   const [state, dispatch] = React.useReducer(reducer, INITIAL_STATE);
   const playerRef = React.useRef<ReactPlayer>(null);
   const wrapperRef = React.useRef<HTMLDivElement>(null);
+  const [isPlaying, setIsPlaying] = React.useState(false);
 
   const handlePreview = () => {
     dispatch({ type: 'PLAY' });
@@ -71,6 +72,18 @@ const Player: React.FC<ReactPlayerProps> = (props) => {
     dispatch({ type: 'DURATION', payload: duration });
   };
 
+  let data = false;
+
+  const handlePlayerClick = () => {
+    if (data) {
+      handlePause();
+      data = false;
+    } else {
+      handlePlay();
+      data = true;
+    }
+  };
+
   return (
     <StyledPlayer state={state} ref={wrapperRef}>
       <ReactPlayer
@@ -87,6 +100,7 @@ const Player: React.FC<ReactPlayerProps> = (props) => {
             }}
           />
         }
+        onClick={handlePlayerClick}
         controls={state.controls}
         loop={state.loop}
         muted={state.muted}
